@@ -3,7 +3,7 @@ title: Home
 layout: home
 ---
 
-Welcome to the Lantern Studios Unity tool docs.
+# Welcome to the Lantern Studios Unity tool docs.
 
 You can find our Unity Asset Store tools at the following link: link
 
