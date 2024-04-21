@@ -5,7 +5,7 @@ layout: home
 
 Welcome to the Lantern Studios Unity tool docs.
 
-YOu can find our Unity Asset Store tools at the following link: link
+You can find our Unity Asset Store tools at the following link: link
 
 <!-- This is a *bare-minimum* template to create a Jekyll site that uses the [Just the Docs] theme. You can easily set the created site to be published on [GitHub Pages] – the [README] file explains how to do that, along with other details.
 
