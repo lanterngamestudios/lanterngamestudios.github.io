@@ -28,7 +28,8 @@ layout: home
 | **Max Render Distance** 	| If the user does not enable/disable this through their own code or shader, this changes how far the camera has to be before the vegetation is no longer rendered. 	|
 | **Main Camera** 	| The main rendering camera in your game. If null, autoset on awake. 	|
 | **Linked Terrain** 	| The terrain that the object is liked on. This is used to read vegetation prototype data such as meshes, materials, etc... 	|
-    - Data also contains more data, once some vegetation has been painted:
+
+- `Data` also contains more properties, visible once some vegetation has been painted:
 
 ![Data Properties](/assets/images/dataProperties.png)
 
@@ -42,3 +43,11 @@ layout: home
 | **Debug Color** 	| The color with which to render the debug gizmos in edit mode 	|
 | **Size** 	| The size multiplier of the rendered mesh. Use this to scale your vegetation detail up and down. 	|
 | **Matrices For Storage** 	| The actual matrix data about your painted vegetation details. You should never edit this by hand. 	|
+
+- To begin painting vegetation on your mesh, go to `Tools>Custom Vegetation Painter Palette`, then:
+    - Select the vegetation detail you would like to paint through the `Paint Detail` dropdown
+    - Set the brush size.
+    - Set the density.
+- The controls to paint, once you have selected the above, are `left click` on the object to paint (as prompted by the blue circular gizmo), and `left click` while holding down `Shift` to delete.
+- The script on your game object also has a `Paint` checkbox. **When ticked, paint controles will override the default Unity click behavior, so if you would like to re-gain control of your object to move, rotate, deselect, scale, etc please untick the `Paint` box and only re-tick it when you want to paint vegetation again.**
+
