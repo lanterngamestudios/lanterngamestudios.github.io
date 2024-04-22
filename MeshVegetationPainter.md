@@ -20,10 +20,10 @@ layout: home
 - In the inspector, click `Add Component` and add `VegetationPainterV2`.
 - Properties on this script are as follows:
 ![Script Properties](/assets/images/scriptProperties.png)
-|          Property          | Description                                                                                                                                                                                                       |
-|:--------------------------:|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Data                       | Data contains all of the data generated used to render your vegetation in editor and during Play mode.                                                                                                            |
+| Property | Description |
+|:---:|---|
+| Data | Data contains all of the data generated used to render your vegetation in editor and during Play mode. |
 | Max Painting Surface Angle | The max angle (from VEctor3.Up)that you want to paint vegetation on, aka the maximum slope angle that vegetation can be painted on. Useful to stop vegetation from painting on the vertical side of cliffs etc... |
-| Max Render Distance        | If the user does not enable/disable this through their own code or shader, this changes how far the camera has to be before the vegetation is no longer rendered.                                                 |
-| Main Camera                | The main rendering camera in your game. If null, autoset on awake.                                                                                                                                                |
-| Linked Terrain             | The terrain that the object is liked on. This is used to read vegetation prototype data such as meshes, materials, etc...                                                                                         |
+| Max Render Distance | If the user does not enable/disable this through their own code or shader, this changes how far the camera has to be before the vegetation is no longer rendered. |
+| Main Camera | The main rendering camera in your game. If null, autoset on awake. |
+| Linked Terrain | The terrain that the object is liked on. This is used to read vegetation prototype data such as meshes, materials, etc... |
