@@ -30,6 +30,7 @@ layout: home
 | **Linked Terrain** 	| The terrain that the object is liked on. This is used to read vegetation prototype data such as meshes, materials, etc... 	|
 
     - Data also contains more data, once some vegetation has been painted:
+
 ![Data Properties](/assets/images/dataProperties.png)
 
 | Parameter 	| Description 	|
