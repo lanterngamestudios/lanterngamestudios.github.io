@@ -22,9 +22,23 @@ layout: home
 ![Script Properties](/assets/images/scriptProperties.png)
 
 | Property 	| Description 	|
+|:---:	|---	|
+| **Data** 	| Data contains all of the data generated used to render your vegetation in editor and during Play mode. 	|
+| **Max Painting Surface Angle** 	| The max angle (from VEctor3.Up)that you want to paint vegetation on, aka the maximum slope angle that vegetation can be painted on. Useful to stop vegetation from painting on the vertical side of cliffs etc... 	|
+| **Max Render Distance** 	| If the user does not enable/disable this through their own code or shader, this changes how far the camera has to be before the vegetation is no longer rendered. 	|
+| **Main Camera** 	| The main rendering camera in your game. If null, autoset on awake. 	|
+| **Linked Terrain** 	| The terrain that the object is liked on. This is used to read vegetation prototype data such as meshes, materials, etc... 	|
+
+- - Data also contains more data, once some vegetation has been painted:
+![Data Properties](/assets/images/dataProperties.png)
+
+| Parameter 	| Description 	|
 |---	|---	|
-| Data 	| Data contains all of the data generated used to render your vegetation in editor and during Play mode. 	|
-| Max Painting Surface Angle 	| The max angle (from VEctor3.Up)that you want to paint vegetation on, aka the maximum slope angle that vegetation can be painted on. Useful to stop vegetation from painting on the vertical side of cliffs etc... 	|
-| Max Render Distance 	| If the user does not enable/disable this through their own code or shader, this changes how far the camera has to be before the vegetation is no longer rendered. 	|
-| Main Camera 	| The main rendering camera in your game. If null, autoset on awake. 	|
-| Linked Terrain 	| The terrain that the object is liked on. This is used to read vegetation prototype data such as meshes, materials, etc... 	|
+| **Object Painted** 	| The GameObject reference to the prefab of your vegetation object (grass, fern, bush, etc...) 	|
+| **Mesh** 	| The Mesh of the vegetation detail (automatically detected) 	|
+| **Mat** 	| The Material of the vegetation detail (automatically detected) 	|
+| **Bounds** 	| The Bounds of the Painted vegetation. This is set automatically on start and used for culling. 	|
+| **Debug Draw** 	| Whether or not to draw the gizmos to visualize this detail in edit mode 	|
+| **Debug Color** 	| The color with which to render the debug gizmos in edit mode 	|
+| **Size** 	| The size multiplier of the rendered mesh. Use this to scale your vegetation detail up and down. 	|
+| **Matrices For Storage** 	| The actual matrix data about your painted vegetation details. You should never edit this by hand. 	|
