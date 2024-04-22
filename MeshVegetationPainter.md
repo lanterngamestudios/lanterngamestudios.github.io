@@ -28,7 +28,6 @@ layout: home
 | **Max Render Distance** 	| If the user does not enable/disable this through their own code or shader, this changes how far the camera has to be before the vegetation is no longer rendered. 	|
 | **Main Camera** 	| The main rendering camera in your game. If null, autoset on awake. 	|
 | **Linked Terrain** 	| The terrain that the object is liked on. This is used to read vegetation prototype data such as meshes, materials, etc... 	|
-
     - Data also contains more data, once some vegetation has been painted:
 
 ![Data Properties](/assets/images/dataProperties.png)
